@@ -12,14 +12,14 @@
 
 #### Todo:
 
--   ctrl-y for redo (E.g: `redo.push(history.pop())`)
+-   `ctrl-y` for redo (E.g: `redo.push(history.pop())`)
 -   Canvas viewport scaling POC (`onscroll` de/increments scaling factor)
     -   scaling factor will have to be used to normalize coordinates and dimensions of objects
 -   adding content to notes
     -   `edit` event on typing debounce or typing end (to function with ctrl-z and ctrl-y)
 -   split logic into systems, there is too much logic in handlers
-    -   CursorSystem -> sets cursor meta information in state
-    -   InputSystem -> sets keyboard meta information in state
-    -   RenderSystem -> basically what the existing update function is
+    -   `CursorSystem` -> sets cursor meta information in state
+    -   `InputSystem` -> sets keyboard meta information in state
+    -   `RenderSystem` -> basically what the existing `update` function is
 -   Override browser drag and drop, object to be rendered with absolute positioning instead of relying on the greyed out drag placeholder
 -   Proper event type / object definitions (everything is very loosely typed right now)
